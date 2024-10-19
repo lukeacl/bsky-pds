@@ -1,0 +1,8 @@
+.DS_Store
+pds/pds.env
+pds/tunnel.env
+pds/account.sqlite*
+pds/did_cache.sqlite*
+pds/sequencer.sqlite*
+pds/actors/
+pds/blocks/
