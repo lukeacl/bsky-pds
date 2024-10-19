@@ -12,6 +12,12 @@ Use this project at your own risk. Self hosting a PDS is a journey not for the f
 
 Clone the repository to your Docker host. Copy `pds.env.example` to `pds.env` and fill out all required fields. Copy `tunnel.env.example` to `tunnel.env` and configure with your Cloudflare tunnel details. Your Cloudflare tunnel should point to `http://pds:3000`.
 
+### Cloudflare Limitations
+
+Cloudflare doesnt support SSL on domain sub sub domains on the free plan, it's only supported with a custom certificate or by using Advanced Certificate Manager.
+
+When self hosting a PDS you will get invalid.handle errors unless secure access is possible to https://yourusername.pds.example.com for example, where pds.example.com is your PDS hostname. You can work around this by setting a TXT record for yourusername.pds.example.com to authenticate your DID to your handle instead.
+
 ## Running
 
 bsky-pds was designed to be run using Docker Compose, if you should proceed you'll know what to do next.
