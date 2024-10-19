@@ -10,7 +10,7 @@ Use this project at your own risk. Self hosting a PDS is a journey not for the f
 
 ## Configuring
 
-Clone the repository to your Docker host. Copy `pds.env.example` to `pds.env` and fill out all required fields. Copy `tunnel.env.example` to `tunnel.env` and configure with your Cloudflare tunnel details.
+Clone the repository to your Docker host. Copy `pds.env.example` to `pds.env` and fill out all required fields. Copy `tunnel.env.example` to `tunnel.env` and configure with your Cloudflare tunnel details. Your Cloudflare tunnel should point to `http://pds:3000`.
 
 ## Running
 
