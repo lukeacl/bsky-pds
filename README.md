@@ -96,8 +96,8 @@ PDS_DATA_DIRECTORY=/pds
 
 # Blob Store - Option 2 - S3 (To use, comment option 1)
 PDS_BLOBSTORE_S3_BUCKET= #blobs.pds.example.com
-PDS_BLOBSTORE_S3_ENDPOINT= #ap-southeast-2
-PDS_BLOBSTORE_S3_ENDPOINT= #s3.ap-southeast-2.amazonaws.com
+PDS_BLOBSTORE_S3_REGION= #ap-southeast-2
+PDS_BLOBSTORE_S3_ENDPOINT= #https://s3.ap-southeast-2.amazonaws.com
 PDS_BLOBSTORE_S3_FORCE_PATH_STYLE=true
 PDS_BLOBSTORE_S3_ACCESS_KEY_ID= #accessKeyId
 PDS_BLOBSTORE_S3_SECRET_ACCESS_KEY= #secretAccessKey
