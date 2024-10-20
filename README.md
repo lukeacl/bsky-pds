@@ -150,6 +150,12 @@ Once you've done a few test posts on your PDS you should makesure websockets are
 
 `websocat "wss://pds.example.com/xrpc/com.atproto.sync.subscribeRepos?cursor=0"`
 
+## Migration
+
+If you think you're ready to migrate your live account off bsky.social to your own PDS you'll find a link to a guide which describes the process below. I cannot warn you enough however, this is a dangerous path, you might lose your data and your account, and once you migrate away, you cannot migrate back.
+
+[Migrating PDS Account with `goat` by @bnewbold.net](https://whtwnd.com/bnewbold.net/3l5ii332pf32u)
+
 ## Support
 
 Support is limited. All the risk is yours. However, if you get too stuck you'll find me on Bluesky, [@lukeacl.com](https://bsky.app/profile/lukeacl.com).
