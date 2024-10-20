@@ -146,6 +146,10 @@ Next if you've paid for Cloudflare Advanced Certificate Manager make sure you ca
 
 Alternatively if you're using DNS to validate the handle to the DID or in any other case you can use [https://bsky-debug.app/handle](https://bsky-debug.app/handle) to validate handle resolution. In any case you should get a pass, through HTTPS or DNS validation. One of them must succeed for your PDS to function correctly.
 
+Once you've done a few test posts on your PDS you should makesure websockets are working using a tool like `wssdump` or `websocat` using a command like below. If it's all working properly you should see some data dump out, and if you keep it open and perform actions on your PDS you should see more data flow.
+
+`websocat "wss://pds.example.com/xrpc/com.atproto.sync.subscribeRepos?cursor=0"`
+
 ## Support
 
 Support is limited. All the risk is yours. However, if you get too stuck you'll find me on Bluesky, [@lukeacl.com](https://bsky.app/profile/lukeacl.com).
