@@ -3,12 +3,16 @@ services:
     image: ghcr.io/bluesky-social/pds:0.4
     restart: unless-stopped
     volumes:
-        - ./pds:/pds
+      - ./pds:/pds
     env_file:
       - ./pds/pds.env
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
   tunnel:
     image: cloudflare/cloudflared
     restart: always
     command: tunnel run
     env_file:
       - ./pds/tunnel.env
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
